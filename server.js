@@ -12,13 +12,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.all('/api/properties', (req, res) => {
     proxy.web(req, res, {
-        target: "http://localhost:3000"
+        target: "http://ec2-13-59-243-8.us-east-2.compute.amazonaws.com/"
       });
 } )
 
 app.all('/images*', (req, res) => {
     proxy.web(req, res, {
-        target: "http://localhost:3000"
+        target: "http://ec2-13-59-243-8.us-east-2.compute.amazonaws.com/"
       });
 } )
 
@@ -37,7 +37,7 @@ app.all('/api/reviews', (req, res) => {
 
 app.all('/recommendations', (req, res) => {
     proxy.web(req, res, {
-        target: "http://localhost:3009"
+        target: "http://ec2-3-89-251-90.compute-1.amazonaws.com:3009/"
       });
 } )
 

@@ -1,0 +1,11 @@
+#reservation {
+    position: absolute;
+    top: 20px;
+    right: 6%;
+    margin-bottom: auto;
+  }
+  
+  #recommendations {
+      position: absolute;
+      bottom: 10%;
+  }
